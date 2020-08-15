@@ -60,7 +60,7 @@ int UDPServer::UDPServerFunc() {
         perror("socket creation failed");
         exit(EXIT_FAILURE);
     }
-    CCLOG("Socket created");
+
     // Filling server information
     struct sockaddr_in servaddr, cliaddr;
     memset(&servaddr, 0, sizeof(servaddr));
